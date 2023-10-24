@@ -1,0 +1,57 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(https://cdn.pixabay.com/photo/2015/11/10/08/22/pay-1036470_1280.jpg);
+    padding-top: 50px;
+}
+.parent{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-auto-rows: 80px;
+    width:400px;
+}
+
+.child{
+    border: 1px solid black;
+    
+}
+.output{
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+.zero{
+    grid-column-start:1;
+    grid-column-end:3;
+}
+
+div,button {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    color:white;
+}
+
+.orange{
+    background-color: orangered;
+}
+.light-gray{
+    background-color: darkgrey;
+}
+.dark-gray{
+    background-color:  gray;
+} 
+
+.output{
+    background-color: black;
+    display: grid;
+    align-items: center;
+    justify-content: end;
+    padding-right: 20px;
+}
+
+.zero{
+    display: grid;
+    align-items: center;
+    justify-content: start;
+    padding-left: 40px;
+}
